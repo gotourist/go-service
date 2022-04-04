@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS post(
+    id SERIAL PRIMARY KEY,
+    title VARCHAR,
+    body VARCHAR,
+    is_deleted BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP NOT NULL DEFAULT now()
+)

@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS collect(
+    id SERIAL PRIMARY KEY,
+    started BOOLEAN NOT NULL DEFAULT false,
+    finished BOOLEAN NOT NULL DEFAULT false
+);
