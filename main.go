@@ -82,8 +82,8 @@ func main() {
 
 	// =========================================================================
 	// CronJobs
-	lowStockCronJob := events.NewCronJob(connDb, &config, logger, publishersMap)
-	go lowStockCronJob.Start()
+	collectPostsCronJob := events.NewCronJob(connDb, &config, logger, publishersMap)
+	go collectPostsCronJob.Start()
 
 	// =========================================================================
 	// gRPC server
